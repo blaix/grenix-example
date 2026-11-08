@@ -1,0 +1,18 @@
+{
+  "name": "my-gren-cli",
+  "version": "0.1.0",
+  "description": "A Gren command line application",
+  "bin": {
+    "my-gren-cli": "app"
+  },
+  "files": [
+    "app"
+  ],
+  "scripts": {
+    "build": "gren make Main --optimize && chmod +x app",
+    "prepack": "npm run build"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,6 @@
+.gren/
+app
+result
+node_modules/
+*.tgz
+.direnv

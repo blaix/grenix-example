@@ -1,0 +1,16 @@
+module Main exposing (main)
+
+import Init
+import Node
+import Stream.Log
+
+
+main : Node.SimpleProgram a
+main =
+    Node.defineSimpleProgram init
+
+
+init : Node.Environment -> Init.Task (Cmd a)
+init env =
+    Stream.Log.line env.stdout "Hello. I like you and I love you."
+        |> Node.endSimpleProgram
