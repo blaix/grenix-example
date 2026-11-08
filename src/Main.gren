@@ -12,5 +12,5 @@ main =
 
 init : Node.Environment -> Init.Task (Cmd a)
 init env =
-    Stream.Log.line env.stdout "Hello. I like you and I love you."
+    Stream.Log.line env.stdout "Goodbye. I miss you already."
         |> Node.endSimpleProgram
